@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Atiq Ur Rehman | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+transition:0.4s;
+}
+
+.light{
+background:#f4f4f4;
+color:#222;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+.toggle{
+background:#ff4d5a;
+padding:8px 14px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(135deg,#1e293b,#020617);
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 28px;
+background:#ff4d5a;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+/* SECTIONS */
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.project{
+overflow:hidden;
+border-radius:10px;
+position:relative;
+}
+
+.project img{
+width:100%;
+transition:.4s;
+}
+
+.project:hover img{
+transform:scale(1.1);
+}
+
+.project-title{
+position:absolute;
+bottom:0;
+background:rgba(0,0,0,.7);
+width:100%;
+padding:10px;
+text-align:center;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.social a{
+display:inline-block;
+margin:10px;
+padding:12px 22px;
+background:#ff4d5a;
+border-radius:6px;
+color:white;
+text-decoration:none;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:15px 18px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+z-index:999;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Atiq Portfolio</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="toggle" onclick="mode()">Mode</div>
+
+</nav>
+
+<div class="hero">
+
+<h1>Atiq Ur Rehman</h1>
+
+<p>Web Developer • App Builder • Designer • AI Creator</p>
+
+<a href="#contact" class="btn">Hire Me</a>
+
+</div>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p style="text-align:center;max-width:700px;margin:auto">
+
+I build modern websites, applications, banner designs and social media content.  
+I also create AI generated graphics and digital marketing assets.
+
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Website Development</h3>
+<p>Modern responsive business websites.</p>
+</div>
+
+<div class="card">
+<h3>Application Development</h3>
+<p>Mobile and web applications.</p>
+</div>
+
+<div class="card">
+<h3>Banner Design</h3>
+<p>Professional marketing banners.</p>
+</div>
+
+<div class="card">
+<h3>Social Media Design</h3>
+<p>Creative social media graphics.</p>
+</div>
+
+<div class="card">
+<h3>AI Content Creation</h3>
+<p>AI images and creative digital assets.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML / CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Web Development</div>
+<div class="skill">UI Design</div>
+<div class="skill">AI Tools</div>
+<div class="skill">Social Media Marketing</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<img src="https://picsum.photos/400/300?1">
+<div class="project-title">Website Project</div>
+</div>
+
+<div class="project">
+<img src="https://picsum.photos/400/300?2">
+<div class="project-title">Mobile App</div>
+</div>
+
+<div class="project">
+<img src="https://picsum.photos/400/300?3">
+<div class="project-title">Banner Design</div>
+</div>
+
+<div class="project">
+<img src="https://picsum.photos/400/300?4">
+<div class="project-title">AI Artwork</div>
+</div>
+
+<div class="project">
+<img src="https://picsum.photos/400/300?5">
+<div class="project-title">Social Media Design</div>
+</div>
+
+<div class="project">
+<img src="https://picsum.photos/400/300?6">
+<div class="project-title">App UI</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="contact">
+
+<p>Email: atiqr00999@gmail.com</p>
+
+<p>Phone: 03302820612</p>
+
+<div class="social">
+
+<a href="mailto:atiqr00999@gmail.com">Email</a>
+
+<a href="tel:+923302820612">Call</a>
+
+<a href="https://instagram.com/atiq_ur_rehman22" target="_blank">Instagram</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Atiq Ur Rehman</p>
+
+</footer>
+
+<!-- WhatsApp Button -->
+
+<a href="https://wa.me/923302820612" class="whatsapp" target="_blank">💬</a>
+
+<script>
+
+function mode(){
+document.body.classList.toggle("light")
+}
+
+document.querySelectorAll("nav a").forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+e.preventDefault()
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+behavior:"smooth"
+
+})
+
+})
+
+})
+
+</script>
+
+</body>
+</html>
